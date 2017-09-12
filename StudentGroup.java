@@ -42,7 +42,7 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		if( index <0 || index>=students.length) 
      		throw new IllegalArgumentException(Integer.toString(index));
-		return students[i]; //--------------------------------------??
+		return students[i]; 
 		
 	}
 
