@@ -40,15 +40,17 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		if( index <0 || index>=students.length) 
+		if( index <0 || index >= (students.length)) 
      		throw new IllegalArgumentException(Integer.toString(index));
-		return students[index]; 
-		
+		return students[index]; 		
 	}
 
 	@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
+		if( index <0 || index>=students.length || students == null) 
+     		throw new IllegalArgumentException(Integer.toString(index));
+		students[index] =  student;		
 	}
 
 	@Override
