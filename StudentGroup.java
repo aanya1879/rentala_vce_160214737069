@@ -32,13 +32,17 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void setStudents(Student[] students) {
 		// Add your implementation here
-		
+		if( students == null) 
+     		throw new IllegalArgumentException("No student");
+		this.students = students;
 	}
 
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		
+		if( index <0 || index>=students.length) 
+     		throw new IllegalArgumentException(Integer.toString(index));
+		return students[i]; //--------------------------------------??
 		
 	}
 
